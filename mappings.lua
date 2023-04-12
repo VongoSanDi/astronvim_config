@@ -30,6 +30,7 @@ return {
     ["<A-k>"] = { ":m .-2<CR>==", desc = "Move current line up one time" },
     ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Previous buffer" },
     ["<S-h>"] = { "<cmd>bprevious<cr>", desc = "Previous tab" },
+    ["<Leader>aa"] = { ":silent :%y+ <CR>", desc = "Copy whole buffer content" },
   },
   t = {
     -- setting a mapping to false will disable it
