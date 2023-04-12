@@ -28,6 +28,8 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<A-j>"] = { ":m .+1<CR>==", desc = "Move current line down one time" },
     ["<A-k>"] = { ":m .-2<CR>==", desc = "Move current line up one time" },
+    ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Previous buffer" },
+    ["<S-h>"] = { "<cmd>bprevious<cr>", desc = "Previous tab" },
   },
   t = {
     -- setting a mapping to false will disable it
