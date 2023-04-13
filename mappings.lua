@@ -28,11 +28,11 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<A-j>"] = { ":m .+1<CR>==", desc = "Move current line down one time" },
     ["<A-k>"] = { ":m .-2<CR>==", desc = "Move current line up one time" },
-    ["<S-j>"] = {
+    ["<S-h>"] = {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
       desc = "Previous buffer",
     },
-    ["<S-k>"] = {
+    ["<S-l>"] = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
       desc = "Next buffer",
     },
