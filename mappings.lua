@@ -28,8 +28,16 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<A-j>"] = { ":m .+1<CR>==", desc = "Move current line down one time" },
     ["<A-k>"] = { ":m .-2<CR>==", desc = "Move current line up one time" },
-    ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Previous buffer" },
-    ["<S-h>"] = { "<cmd>bprevious<cr>", desc = "Previous tab" },
+    ["<S-j>"] = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous buffer",
+    },
+    ["<S-k>"] = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer",
+    },
+    -- ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Previous buffer" },
+    -- ["<S-h>"] = { "<cmd>bprevious<cr>", desc = "Previous tab" },
     ["<Leader>aa"] = { ":silent :%y+ <CR>", desc = "Copy whole buffer content" },
   },
   t = {
