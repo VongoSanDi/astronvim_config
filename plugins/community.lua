@@ -11,4 +11,5 @@ return {
   { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.pack.tailwindcss" },
 }
