@@ -12,4 +12,7 @@ return {
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.vue" },
+  -- { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  { import = "astrocommunity.programming-language-support.rest-nvim" },
+  { import = "astrocommunity.editing-support.nvim-devdocs" },
 }

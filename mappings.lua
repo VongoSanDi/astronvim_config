@@ -38,7 +38,8 @@ return {
     },
     -- ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Previous buffer" },
     -- ["<S-h>"] = { "<cmd>bprevious<cr>", desc = "Previous tab" },
-    ["<Leader>aa"] = { ":silent :%y+ <CR>", desc = "Copy whole buffer content" },
+    ["<leader>aa"] = { ":silent :%y+ <CR>", desc = "Copy whole buffer content" },
+    ["<leader>rn"] = { "<Plug>RestNvim<CR>", desc = "Run the request under the cursor" },
   },
   t = {
     -- setting a mapping to false will disable it
